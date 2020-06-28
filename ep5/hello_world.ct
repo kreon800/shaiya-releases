@@ -1,0 +1,26 @@
+//send everyone a notice by Bowie 06/2020
+[ENABLE]
+alloc(packet,128)
+alloc(hello_world,128)
+registersymbol(hello_world)
+{
+usage:
+call hello_world
+}
+packet:
+//construct the notice packet using bytes
+//db + opcode + length + 'message' + null
+db 0B F9 #11 'hello world' 00
+hello_world:
+pushad //save all 32 bit registers
+mov esi,dword ptr[00587960] //g_pWorld
+mov eax,#14 //eax = message length + 3
+mov ecx,packet //move packet into ecx
+call 00419120 //call CWorld::SendAll
+popad //restore all 32 bit registers
+ret //return to the calling function
+
+[DISABLE]
+dealloc(packet)
+dealloc(hello_world)
+unregistersymbol(hello_world)
