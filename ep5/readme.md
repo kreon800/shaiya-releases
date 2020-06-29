@@ -2,7 +2,7 @@
 * ps_game functions list
 * ps_game without hooks
 
-* game.exe
+**game.exe**
 ```asm
 confirm button
 00513023 - jmp
