@@ -13,10 +13,16 @@ packet:
 db 0B F9 #11 'hello world' 00
 hello_world:
 pushad //save all 32 bit registers
+pushfd //save all flags
+sub esp,80 //allocate 128 bytes
+mov edi,esp //edi = CWorld
+mov edi,packet //move packet into edi
 mov esi,dword ptr[00587960] //g_pWorld
 mov eax,#14 //eax = message length + 3
-mov ecx,packet //move packet into ecx
+mov ecx,edi //move packet into ecx
 call 00419120 //call CWorld::SendAll
+add esp,80 //restore 128 bytes
+popfd //restore all flags
 popad //restore all 32 bit registers
 ret //return to the calling function
 
