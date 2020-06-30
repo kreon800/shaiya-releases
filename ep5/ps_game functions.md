@@ -20,7 +20,7 @@
 00414B70 - CWorld::EnterUserWorld
 00414BF0 - CWorld::LeaveUserWorld
 00414C90 - CWorld::FindUserBill
-00414CE0 - CWorld::FindUser
+00414CC0 - CWorld::FindUser
 00414D40 - CWorld::FindUserZone
 00414D80 - CWorld::FindUserZoneMove
 00414E00 - CWorld::SendNotice
