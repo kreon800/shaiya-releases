@@ -194,6 +194,7 @@
 0042ADA0 - CCell::SendRange
 0042AF40 - CCell::PSendAll
 0042B0F0 - CCell::PSendRange
+0042BBE0 - SFile::~SFile
 0042BC20 - CBitArray::CBitArray
 0042BC30 - CBitArray::~CBitArray
 0042BC40 - CBitArray::~Create
@@ -1145,6 +1146,7 @@
 004D58C0 - IsItem
 004D58F0 - GetItemRType
 004D5920 - GetItemMType
+004D7A50 - CGameData::CalcQuestItem
 004D7AE0 - CGameData::LoadKCStatus
 004D7E20 - CGameData::LoadBaseItem
 004D8210 - CGameData::LoadStatus
@@ -1159,7 +1161,12 @@
 004DC0C0 - CGameData::InitItemEnchant
 004DC1D0 - CGameData::ReItemEnchant
 004DCF10 - CGameData::InitMobCreate
+004E04D0 - CQuestData::Load
+004DF420 - CNpcData::Load
+004DFDD0 - CItemQuestData::Load
+004DFF00 - CMobQuestData::Init
 004E0CA0 - DBInitializeConstNpcQuest
+004E0DA0 - ReleaseNpcQuest
 004E2220 - Printf
 004E9AA0 - SAcceptor::StopAcception
 004E1A50 - GetSystemTime
@@ -1195,6 +1202,10 @@
 004F5BE0 - SConsole::AddCommand
 0051A8CD - sprintf
 0051BA99 - atoi
+0051E030 - _chkstk
+0051EF73 - _read
+0051E8FB - _open
+0051FA6C - _close
 0054059C - __security_cookie
 005540D0 - GetTickCount
 005540E4 - Sleep
