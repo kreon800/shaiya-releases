@@ -2,6 +2,9 @@
 ```asm
 004011E0 - SAgent::GetStatistics
 00408C00 - CGameData::GetMobInfo
+004090C0 - CServerApp::InitConsoleCommand
+00409460 - CServerApp::OnConsoleCommand
+0040D5B0 - InitDBTest
 004139E0 - CWorld::EnterUser
 00413A50 - CWorld::BillingRemainTime
 00413A90 - CWorld::RenewRemainTime
