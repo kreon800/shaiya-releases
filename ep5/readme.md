@@ -1,6 +1,11 @@
 * custom notice function
 * ps_game functions list
-* ps_game without hooks
+* ps_bdAgent functions list
+* ps_game with new commands
+
+**ps_game**
+* /ntcn <charname> <message>
+* /ntcid <charid> <message>
 
 **game.exe**
 ```asm
