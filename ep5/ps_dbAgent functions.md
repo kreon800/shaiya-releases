@@ -1,4 +1,4 @@
-**ps_dbAgent functions
+**ps_dbAgent functions**
 ```asm
 00402900 - CUser::ResetData
 00403470 - CUser::Disconnect
