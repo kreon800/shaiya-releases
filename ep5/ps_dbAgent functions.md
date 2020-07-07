@@ -1,3 +1,5 @@
+**ps_dbAgent functions
+```asm
 00402900 - CUser::ResetData
 00403470 - CUser::Disconnect
 00403490 - CUser::SaveExitCharacter
@@ -71,3 +73,4 @@
 00436810 - SDBDispatchClient::PostDispatchDB
 00492BD4 - g_bLogLoadChar
 00492BD8 - CUser::m_dwDBSaveTickLast
+```
