@@ -4,8 +4,8 @@
 * ps_game with new commands
 
 **ps_game**
-* /ntcn <charname> <message>
-* /ntcid <charid> <message>
+* /ntcn charname message
+* /ntcid charid message
 
 **game.exe**
 ```asm
