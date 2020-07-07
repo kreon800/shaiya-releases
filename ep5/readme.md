@@ -1,7 +1,7 @@
 * custom notice function
 * ps_game functions list
 * ps_bdAgent functions list
-* ps_game with new commands
+* new ps_game commands
 
 **ps_game**
 * /ntcn charname message
