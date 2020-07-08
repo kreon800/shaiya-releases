@@ -1203,6 +1203,17 @@
 004F27E0 - SWorker::AcceptPost
 004F28E0 - SWorker::RecvPost
 004F5BE0 - SConsole::AddCommand
+004F5E90 - SConsole::ConsoleCommandExit
+004F6020 - SConsole::SConsole
+004F60C0 - SConsole::IsShutdown
+004F60D0 - SConsole::~SConsole
+004F6150 - SServerApplication::~SServerApplication
+004F61F0 - SServerApplication::InitConsoleCommand
+004F6200 - SServerApplication::OnConsoleCommand
+004F6210 - SConsole::ParseCommand
+004F6520 - SConsole::OnRead
+004F6630 - SConsole::ConsoleProcess
+004F67F0 - SServerApplication::SServerApplication
 0051A8CD - sprintf
 0051BA99 - atoi
 0051E030 - _chkstk
