@@ -22,14 +22,14 @@ DWORD __stdcall ThreadProc2(_In_ LPVOID lpParameter)
 	*(PDWORD(&buff[12])) = 0x1B02000B;
 	*(PDWORD(&buff[16])) = dwUid;
 
-	DWORD dwTempCall = 0x406960;
+	DWORD dwTempCall = 0x406960; //CClientToMgr::OnRecv
 	DWORD dwBuffAddr = (DWORD)buff;
 
 	_asm
 	{
 		push dwBuffAddr
 		mov ecx,0x0
-		call dwTempCall
+		call dwTempCall //CClientToMgr::OnRecv
 	}
 	return 0;
 }
