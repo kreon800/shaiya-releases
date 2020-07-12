@@ -10,5 +10,5 @@
 #include <vector>
 
 void* Hook(DWORD address, int length, DWORD target);
-DWORD __stdcall ShopConnect(_In_ LPVOID lpParameter);
-DWORD __stdcall UpdatePoint(_In_ LPVOID lpParameter);
+DWORD __stdcall ThreadProc1(_In_ LPVOID lpParameter);
+DWORD __stdcall ThreadProc2(_In_ LPVOID lpParameter);
