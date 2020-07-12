@@ -44,11 +44,11 @@ __declspec(naked) void GetHook()
 	{
 		pushad //save the data stored in all 32 bit registers
 		lea eax,[ecx+0x5AC0] //load the user's points into eax
-		push eax //push the user point argument           
+		push eax //push the point argument           
 		mov eax,[ecx+0x582C] //move the useruid into eax
 		push eax //push the useruid argument            
 		call GetPoint //query sql to get the user's points
-		add esp,0x8 //return 8 bytes to the stack
+		add esp,0x8 //add 8 bytes to the stack
 		popad //restore previous data to all 32 bit registers
 		//orginal code
 		xor ebp,ebp
