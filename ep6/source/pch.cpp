@@ -76,7 +76,7 @@ DWORD __stdcall ThreadProc1(_In_ LPVOID lpParameter)
 	//checks the database connection
 	if (!g_DBobj.LinkDataBase()) return 0;
 	//defines addresses for asm hooks
-	Hook(0x47D151, 6, (DWORD)GetHook);
-	Hook(0x48876F, 5, (DWORD)UseHook);
+	Hook((void*)0x47D151, GetHook, 6);
+	Hook((void*)0x48876F, UseHook, 5);
 	return 0;
 }
