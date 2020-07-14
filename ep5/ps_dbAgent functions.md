@@ -71,6 +71,17 @@
 0042DFC0 - DBCharacter::ResetStatusEvt
 0042E0B0 - DBCharacter::ResetSkillEvt
 00436810 - SDBDispatchClient::PostDispatchDB
+00436CB0 - SLog::PrintFileDirect
+00441370 - SDatabasePool::AllocDB
+004440D0 - SDataBase::Prepare
+00444C80 - SDatabase::Query
+00444D00 - SDatabase::MoreResults
+00444D40 - SDatabase::BindParameter
+004483E9 - __security_check_cookie
+00448A08 - operator delete
+00449393 - sprintf
+0048F3F4 - __security_cookie
 00492BD4 - g_bLogLoadChar
 00492BD8 - CUser::m_dwDBSaveTickLast
+004930A8 - g_DatabasePool
 ```
