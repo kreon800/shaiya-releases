@@ -8,3 +8,6 @@
 
 **ps_dbAgent**
 * calls usp_Read_User_CashPoint_UsersMaster
+
+**ItemMallFix**
+* no database login needed
