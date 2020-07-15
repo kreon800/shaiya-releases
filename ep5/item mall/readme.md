@@ -1,5 +1,5 @@
 **ps_game**
-* loads the user's point balance
+* loads the point balance
 * new console commands
 ```asm
 /ntcn charname message
