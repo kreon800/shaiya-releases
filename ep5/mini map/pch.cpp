@@ -64,7 +64,6 @@ __declspec(naked) void nameHook()
 }
 //the main function
 void mapFunc() {
-	//defines addresses for asm hooks
 	Hook((void*)0x4C0D55, miniHook, 13);
 	Hook((void*)0x4D2E99, nameHook, 9);
 }
