@@ -3,9 +3,8 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-//the main function
+
 void npcFunc();
-//the hook function
 BOOL Hook(void * pAddr, void * pNAddr, int len = 5);
 //store the npc window ids in an array of integers
 int npcArray[6] = { 102, 121, 103, 110, 111, 101 };
