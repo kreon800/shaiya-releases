@@ -1,8 +1,8 @@
 * custom notice function
 * ps_game functions list
-* ps_bdAgent functions list
+* ps_dbAgent functions list
 * custom mini map source
-* experimental item mall
+* item mall solution (beta)
 
 **game.exe**
 ```asm
