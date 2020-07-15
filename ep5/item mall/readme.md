@@ -1,5 +1,5 @@
 ```diff
-- pet.dll will not work with this!
+- not compatible with pet.dll -
 ```
 **ps_game**
 * loads the point balance
