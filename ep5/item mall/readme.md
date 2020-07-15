@@ -1,5 +1,6 @@
-- ![#f03c15]pet.dll will not work with this! `#f03c15`
-
+```diff
+- pet.dll will not work with this!
+```
 **ps_game**
 * loads the point balance
 * new console commands
