@@ -74,7 +74,9 @@
 00436CB0 - SLog::PrintFileDirect
 00441370 - SDatabasePool::AllocDB
 004440D0 - SDataBase::Prepare
+00444270 - SDatabase::GetData
 00444C80 - SDatabase::Query
+00444CC0 - SDatabase::Fetch
 00444D00 - SDatabase::MoreResults
 00444D40 - SDatabase::BindParameter
 004483E9 - __security_check_cookie
