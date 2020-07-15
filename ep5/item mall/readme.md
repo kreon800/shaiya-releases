@@ -1,7 +1,9 @@
 **ps_game**
 * new console commands
-*/ntcn charname message*
-*/ntcid charid message*
+```asm
+/ntcn charname message
+/ntcid charid message
+```
 * loads the user's points
 
 **ps_dbAgent**
