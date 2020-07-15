@@ -4,7 +4,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 
-//define the hook function
 BOOL Hook(void * pAddr, void * pNAddr, int len = 5);
 //define the mini map file name as an array of bytes
 unsigned char sz110[] = { 0x31, 0x31, 0x30, 0x2E, 0x74, 0x67, 0x61 };
