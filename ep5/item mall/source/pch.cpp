@@ -6,10 +6,10 @@ DWORD __stdcall ItemMallProc(_In_ LPVOID lpParameter)
 {
 	//define the useruid as the parameter
 	DWORD dwUid = (DWORD)lpParameter;
-	//create a 90 byte buffer filled with zeros
+	//a 90 byte buffer filled with zeros
 	char buff[90] = { 0 };
 	ZeroMemory(buff, 90);
-	//seems to be constructing a packet buffer
+	//seems to be constructing a packet
 	*(PDWORD(&buff[4])) = DWORD(&buff[12]);
 	*(PDWORD(&buff[12])) = 0x1B02000B;
 	*(PDWORD(&buff[16])) = dwUid;
