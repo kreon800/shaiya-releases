@@ -1,12 +1,7 @@
 * custom notice function
 * ps_game functions list
 * ps_bdAgent functions list
-* new ps_game commands
 * custom mini map support
-
-**ps_game**
-* /ntcn charname message
-* /ntcid charid message
 
 **game.exe**
 ```asm
