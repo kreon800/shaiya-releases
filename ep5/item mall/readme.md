@@ -13,4 +13,4 @@
 * calls usp_Read_User_CashPoint_UsersMaster
 
 **ItemMallFix**
-* no database login needed
+* does not require a database connection
