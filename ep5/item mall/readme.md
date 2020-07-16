@@ -1,10 +1,3 @@
-**known bugs**
-* crash when buying
-*solution*
-```asm
-04096B59 call msvcrt.memset
-```
-
 ```diff
 - not compatible with pet.dll -
 ```
@@ -18,3 +11,11 @@
 
 **ps_dbAgent**
 * calls usp_Read_User_CashPoint_UsersMaster
+
+**known bugs**
+* ps_game crashes when buying 
+
+**solution**
+```asm
+04096B59 call msvcrt.memset
+```
