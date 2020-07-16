@@ -12,10 +12,6 @@
 **ps_dbAgent**
 * calls usp_Read_User_CashPoint_UsersMaster
 
-**known bugs**
-* ps_game crashes when buying 
+**bug fixes**
+* 07-16-2020 removed unneeded memset function
 
-**solution**
-```asm
-04096B59 call msvcrt.memset
-```
