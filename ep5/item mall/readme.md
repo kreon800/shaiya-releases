@@ -2,7 +2,7 @@
 - not compatible with pet.dll -
 ```
 **ps_game**
-* loads the point balance
+* functioning item mall
 * new console commands
 ```asm
 /ntcn charname message
@@ -11,6 +11,3 @@
 
 **ps_dbAgent**
 * calls usp_Read_User_CashPoint_UsersMaster
-
-**ItemMallFix**
-* does not require a database connection
