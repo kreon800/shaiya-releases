@@ -2,7 +2,7 @@
 - not compatible with pet.dll -
 ```
 **ps_game**
-* functioning item mall
+* new item mall solution
 * new console commands
 ```asm
 /ntcn charname message
