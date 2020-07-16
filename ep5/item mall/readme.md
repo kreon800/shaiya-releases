@@ -1,3 +1,10 @@
+**known bugs**
+* crash when buying
+*solution*
+```asm
+04096B59 call msvcrt.memset
+```
+
 ```diff
 - not compatible with pet.dll -
 ```
