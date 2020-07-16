@@ -4,7 +4,6 @@
 **instructions**
 1. add the ps_game and ps_dbAgent to your bin
 2. execute usp_Read_User_CashPoint_UsersMaster
-3. enjoy a functioning item mall without dll hell
 
 **ps_game**
 * new item mall solution
