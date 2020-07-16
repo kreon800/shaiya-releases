@@ -12,7 +12,7 @@
 **ps_dbAgent**
 * calls usp_Read_User_CashPoint_UsersMaster
 
-**bug fixes**
+**updates**
 ```diff
 07/16/2020 - removed memset function
 ```
