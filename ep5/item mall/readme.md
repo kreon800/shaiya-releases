@@ -14,5 +14,5 @@
 
 **bug fixes**
 ```diff
-07-16-2020 removed memset function
+07/16/2020 - removed memset function
 ```
