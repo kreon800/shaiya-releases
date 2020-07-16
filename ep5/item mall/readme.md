@@ -13,5 +13,6 @@
 * calls usp_Read_User_CashPoint_UsersMaster
 
 **bug fixes**
-* 07-16-2020 removed unneeded memset function
-
+```diff
+07-16-2020 removed memset function
+```
