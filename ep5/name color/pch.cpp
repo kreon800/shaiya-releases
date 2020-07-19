@@ -1,7 +1,7 @@
 #include "pch.h"
 //add this to config.ini
 /*
-//0 = default
+//0 = none
 //1 = blue
 //2 = green
 //3 = yellow
