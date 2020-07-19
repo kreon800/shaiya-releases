@@ -9,7 +9,7 @@
 //5 = pink
 //6 = purple
 [NAME_COLOR]
-COLOR=6
+COLOR=0
 */
 //parse config.ini for the color key
 void nameKey() {
