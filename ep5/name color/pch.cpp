@@ -39,6 +39,7 @@ __declspec(naked) void nameHook()
 		je _name6
 
 		_nameExit:
+		//original code
 		mov al,[esi+0x298]
 		jmp nameReturn
 
