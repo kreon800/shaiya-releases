@@ -23,13 +23,13 @@ BOOL CDataBase::LinkDataBase()
 		OutputDebugString(L"");
 	}
 	Sleep(500); //delay the function for a bit
-	wchar_t szUsername[255]; //initialize the username variable and declare a buffer size
-	wchar_t szPassword[255]; //initialize the password variable and declare a buffer size
-	GetPrivateProfileString(L"DbInfo", L"Account", L"", szUsername, 255, L".\\Db.ini"); //get username key
-	GetPrivateProfileString(L"DbInfo", L"Pw", L"", szPassword, 255, L".\\Db.ini"); //get password key
+	wchar_t szUsername[255]; //create a buffer to store the username
+	wchar_t szPassword[255]; //create a buffer to store the password
+	GetPrivateProfileString(L"DbInfo", L"Account", L"", szUsername, 255, L".\\Db.ini");
+	GetPrivateProfileString(L"DbInfo", L"Pw", L"", szPassword, 255, L".\\Db.ini");
 	CString szLink; //initialize the query string variable
-	CString szUid = szUsername; //convert the username to a string
-	CString szPwd = szPassword; //convert the password to a string
+	CString szUid = szUsername; //convert the username into a string
+	CString szPwd = szPassword; //convert the password into a string
 	szLink.Format(L"Provider=SQLOLEDB;Server=127.0.0.1;Database=PS_UserData;"); //define the login string
 	m_pConnect->Open(_bstr_t(szLink), _bstr_t(szUid), _bstr_t(szPwd), adModeUnknown); //execute the query
 	return TRUE;
