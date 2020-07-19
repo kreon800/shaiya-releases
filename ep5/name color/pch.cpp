@@ -11,7 +11,7 @@
 [NAME_COLOR]
 COLOR=0
 */
-//parse config.ini for the color key
+//parse config.ini for the color value
 void nameKey() {
 	GetPrivateProfileStringA("NAME_COLOR", "COLOR", "", szColor, 255, ".\\CONFIG.ini");
 }
