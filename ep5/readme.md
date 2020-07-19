@@ -2,8 +2,8 @@
 * custom notice function
 * ps_game functions list
 * ps_dbAgent functions list
-* support extra mini maps
-* ini name color settings
+* support for more mini maps
+* config.ini name color keys
 
 **game.exe**
 ```asm
