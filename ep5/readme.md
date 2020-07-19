@@ -3,7 +3,7 @@
 * ps_game functions list
 * ps_dbAgent functions list
 * support for more mini maps
-* config.ini name color keys
+* config.ini name color setting
 
 **game.exe**
 ```asm
