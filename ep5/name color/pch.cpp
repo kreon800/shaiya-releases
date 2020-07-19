@@ -46,25 +46,25 @@ __declspec(naked) void nameHook()
 		mov dword ptr ds:[esp+0x18],0xFF00FFFF //blue
 		jmp _nameExit
 
-	    _name2:
+	        _name2:
 		mov dword ptr ds:[esp+0x18],0xFF00FF00 //green
 		jmp _nameExit
 
-	    _name3:
+	        _name3:
 		mov dword ptr ds:[esp+0x18],0xFFFFEE00 //yellow
 		jmp _nameExit
 
-	    _name4:
+	        _name4:
 		mov dword ptr ds:[esp+0x18],0xFFFFAA00 //orange
 		jmp _nameExit
 
-	    _name5:
+	        _name5:
 		mov dword ptr ds:[esp+0x18],0xFFEE00FF //pink
 		jmp _nameExit
 
-	    _name6:
+	        _name6:
 		mov dword ptr ds:[esp+0x18],0xFFAA00EE //purple
-        jmp _nameExit
+                jmp _nameExit
 	}
 }
 //main function
