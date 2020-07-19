@@ -1,6 +1,6 @@
 * c++ source that supports adding a name color setting to config.ini
 
-**config.ini**
+**add this to config.ini**
 ```asm
 //0 = default
 //1 = blue
