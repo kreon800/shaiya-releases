@@ -2,7 +2,7 @@
 
 **add this to config.ini**
 ```asm
-//0 = default
+//0 = none
 //1 = blue
 //2 = green
 //3 = yellow
