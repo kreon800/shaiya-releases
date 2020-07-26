@@ -7,7 +7,7 @@ void __declspec(naked) npcHook() {
 		jg _code
 		push ecx //save the current data in ecx
 		lea ecx,[npcArray] //load the npc window array into ecx
-		mov ecx,[ecx+edi*0x4] //move the window data into ecx
+		mov ecx,[ecx+edi*0x4] //move the help menu into ecx
 		//dword ptr ds:[0x9144E4] compiles as a game.exe address
 		//otherwise, it'll get compiled as an address in the dll
 		mov dword ptr ds:[0x9144E4],ecx //move the npc window id
