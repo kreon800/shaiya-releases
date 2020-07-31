@@ -55,7 +55,7 @@ __declspec(naked) void cmdHook()
 		test eax,eax
 		jne _repair
 		mov dword ptr ds:[0x91AD44],0x6 //type	
-		mov dword ptr ds:[0x91AD40],0x1D//type id
+		mov dword ptr ds:[0x91AD40],0x1D //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x67 //warehouse
@@ -69,7 +69,7 @@ __declspec(naked) void cmdHook()
 		test eax,eax
 		jne _reroll
 		mov dword ptr ds:[0x91AD44],0x3 //type
-		mov dword ptr ds:[0x91AD40],0x28//type id
+		mov dword ptr ds:[0x91AD40],0x28 //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x66 //blacksmith
@@ -83,7 +83,7 @@ __declspec(naked) void cmdHook()
 		test eax,eax
 		jne _cmdExit
 		mov dword ptr ds:[0x91AD44],0x1 //type
-		mov dword ptr ds:[0x91AD40],0xF8//type id
+		mov dword ptr ds:[0x91AD40],0xF8 //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x79 //recreation
