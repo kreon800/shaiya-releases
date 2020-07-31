@@ -12,6 +12,7 @@ pointer addresses
 009144E4 - window id
 0091AD40 - npc type
 0091AD44 - npc type id
+022AB7B8 - npc name
 */
 
 //asm hook for new user commands
