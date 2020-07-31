@@ -52,11 +52,11 @@ void __declspec(naked) bIconHook() {
 		jmp bIconRet //return
 
 		_fire: //red
-	    pop edx //restore edx
+	        pop edx //restore edx
 		mov edx,dword ptr ss:[esp+0x1C]
 		mov eax,dword ptr ss:[esp+0x10]
 		push 0x1
-	    push 0x0
+	        push 0x0
 		push edx
 		push ebx
 		push edi
