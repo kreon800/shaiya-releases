@@ -17,5 +17,6 @@ LPCSTR szKeeper = "/warehouse";
 LPCSTR szRepair = "/repair";
 LPCSTR szReroll = "/recreate";
 unsigned char stack[] = { 0x90, 0x90 };
+unsigned char npcJMP[] = { 0xEB, 0x05 };
 
 #endif
