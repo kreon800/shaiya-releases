@@ -1,13 +1,6 @@
 #include "pch.h"
 
 /*
-this will bug after the player 
-interacts with an npc, but will
-reset after entering a new map.
-i'm sure this can be corrected.
-*/
-
-/*
 pointer addresses
 0090D1D4 - gm status
 11 = status 0
@@ -88,4 +81,6 @@ void cmdFunc() {
 	Hook((void*)0x4867A1, cmdHook, 5);
 	//automatically max item stack for fast sales
 	memcpy((void*)0x42E131, stack, sizeof(stack));
+	//ignores a function result (bug workaround)
+	memcpy((void*)0x444129, npcJMP, sizeof(npcJMP));
 }
