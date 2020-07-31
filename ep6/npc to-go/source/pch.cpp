@@ -20,4 +20,6 @@ void __declspec(naked) npcHook() {
 //the main function
 void npcFunc() {
 	Hook((void*)0x522160, npcHook, 5);
+	//ignores a function result (bug workaround)
+	memcpy((void*)0x444129, npcJMP, sizeof(npcJMP));
 }
