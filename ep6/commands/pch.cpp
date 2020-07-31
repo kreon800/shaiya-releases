@@ -37,6 +37,9 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _keeper
+		//use a market npc without items
+		mov dword ptr ds:[0x91AD40],0x12C //type
+		mov dword ptr ds:[0x91AD44],0x1 //typeid
 		mov dword ptr ds:[0x9144E4],0x65 //market
 		jmp cmdJMP
 		_keeper:
