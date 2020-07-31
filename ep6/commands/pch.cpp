@@ -83,7 +83,7 @@ __declspec(naked) void cmdHook()
 void cmdFunc() {
 	Hook((void*)0x4867A1, cmdHook, 5);
 	//automatically max item stack for fast sales
-	memcpy((void*)0x42E131, stack, sizeof(stack));
+	memcpy((void*)0x42E131, maxCnt, sizeof(maxCnt));
 	//ignores a function result (bug workaround)
 	memcpy((void*)0x444129, npcJMP, sizeof(npcJMP));
 }
