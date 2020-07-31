@@ -10,8 +10,8 @@ pointer addresses
 2 = status 32
 1 = status 16
 009144E4 - window id
-0091AD40 - npc type
-0091AD44 - npc type id
+0091AD40 - npc type id
+0091AD44 - npc type
 009144F0 - npc icon
 022AB7B8 - npc name
 */
@@ -40,8 +40,8 @@ __declspec(naked) void cmdHook()
 		test eax,eax
 		jne _keeper
 		//use a market npc without items
-		mov dword ptr ds:[0x91AD40],0x12C //type
-		mov dword ptr ds:[0x91AD44],0x1 //typeid
+		mov dword ptr ds:[0x91AD40],0x12C //type id
+		mov dword ptr ds:[0x91AD44],0x1 //type
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x65 //market
@@ -54,6 +54,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _repair
+		mov dword ptr ds:[0x91AD40],0x1D//type id
+		mov dword ptr ds:[0x91AD44],0x6 //type
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x67 //warehouse
@@ -66,6 +68,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _reroll
+		mov dword ptr ds:[0x91AD40],0x28//type id
+		mov dword ptr ds:[0x91AD44],0x1 //type
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x66 //blacksmith
@@ -78,6 +82,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _cmdExit
+		mov dword ptr ds:[0x91AD40], 0xF8//type id
+		mov dword ptr ds:[0x91AD44], 0x1 //type
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
 		mov dword ptr ds:[0x9144E4],0x79 //recreation
