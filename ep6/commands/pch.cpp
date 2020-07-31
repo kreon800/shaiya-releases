@@ -68,7 +68,7 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _reroll
-		mov dword ptr ds:[0x91AD44],0x1 //type
+		mov dword ptr ds:[0x91AD44],0x3 //type
 		mov dword ptr ds:[0x91AD40],0x28//type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
 		mov dword ptr ds:[0x22AB7B8],0x0 //name
