@@ -16,6 +16,24 @@ pointer addresses
 022AB7B8 - npc name
 */
 
+/*
+message types
+0F = orange
+10 = red
+11 = red
+12 = yellow
+13 = green
+14 = purple
+15 = light blue
+16 = light yellow
+posts as notice
+17 = white
+18 = yellow
+post in chat box
+19+ = white
+0E- = white
+*/
+
 //asm hook for new user commands
 __declspec(naked) void cmdHook()
 {
@@ -103,9 +121,9 @@ __declspec(naked) void cmdHook()
 		jmp cmdRet
 		//send a notice
 		_cmdFail:
-		push 0xC //color code
+		push 0xC
 		push 0x326 //sysmsg-uni.txt line
-		push 0x1F
+		push 0x1F //message type
 		call sysMsg //send the notice
 		add esp,0xC
 		jmp cmdJMP
