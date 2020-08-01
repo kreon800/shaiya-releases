@@ -11,6 +11,7 @@ BOOL Hook(void * pAddr, void * pNAddr, int len = 5);
 DWORD cmdChk = 0x632D07;
 DWORD cmdRet = 0x4867A6;
 DWORD cmdJMP = 0x487532;
+DWORD sysMsg = 0x423150;
 LPCSTR szClose = "/close";
 LPCSTR szMarket = "/market";
 LPCSTR szKeeper = "/warehouse";
