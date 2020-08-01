@@ -39,6 +39,9 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _keeper
+		//fail if a window is already open
+		cmp dword ptr ds:[0x9144E4],0x0
+		jne _cmdFail
 		//use a market npc without items
 		mov dword ptr ds:[0x91AD44],0x1 //type
 		mov dword ptr ds:[0x91AD40],0x12C //type id
@@ -54,6 +57,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _repair
+		cmp dword ptr ds:[0x9144E4],0x0
+		jne _cmdFail
 		mov dword ptr ds:[0x91AD44],0x6 //type	
 		mov dword ptr ds:[0x91AD40],0x1D //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
@@ -68,6 +73,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _reroll
+		cmp dword ptr ds:[0x9144E4],0x0
+		jne _cmdFail
 		mov dword ptr ds:[0x91AD44],0x3 //type
 		mov dword ptr ds:[0x91AD40],0x28 //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
@@ -82,6 +89,8 @@ __declspec(naked) void cmdHook()
 		add esp,0xC
 		test eax,eax
 		jne _cmdExit
+		cmp dword ptr ds:[0x9144E4],0x0
+		jne _cmdFail
 		mov dword ptr ds:[0x91AD44],0x1 //type
 		mov dword ptr ds:[0x91AD40],0xF8 //type id
 		mov dword ptr ds:[0x9144F0],-0x1 //icon
@@ -92,6 +101,14 @@ __declspec(naked) void cmdHook()
 		_cmdExit:
 		push 0x13D4 // /return line in sysmsg-uni.txt
 		jmp cmdRet
+		//send a notice
+		_cmdFail:
+		push 0xC
+		push 0x326 //sysmsg-uni.txt line
+		push 0x1F
+		call sysMsg //send the notice
+		add esp,0xC
+		jmp cmdJMP
 	}
 }
 
