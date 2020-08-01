@@ -17,7 +17,7 @@ pointer addresses
 */
 
 /*
-message types
+message arguments
 0F = orange
 10 = red
 11 = red
@@ -123,7 +123,7 @@ __declspec(naked) void cmdHook()
 		_cmdFail:
 		push 0xC
 		push 0x326 //sysmsg-uni.txt line
-		push 0x1F //message type
+		push 0x1F //message argument
 		call sysMsg //send the notice
 		add esp,0xC
 		jmp cmdJMP
