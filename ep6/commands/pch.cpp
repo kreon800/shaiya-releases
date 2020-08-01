@@ -103,7 +103,7 @@ __declspec(naked) void cmdHook()
 		jmp cmdRet
 		//send a notice
 		_cmdFail:
-		push 0xC
+		push 0xC //color code
 		push 0x326 //sysmsg-uni.txt line
 		push 0x1F
 		call sysMsg //send the notice
