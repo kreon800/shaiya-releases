@@ -5,7 +5,7 @@ void __declspec(naked) bIconHook() {
 	__asm {
 		push edx //save edx
 		//first slot
-		mov dl,byte ptr[eax+008666E2]
+		mov dl,byte ptr[eax+0x8666E2]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
@@ -47,7 +47,7 @@ void __declspec(naked) bIconHook() {
 		cmp dl,0xB4 //storm
 		je _wind
 		//second slot
-		mov dl,byte ptr[eax+008666E3]
+		mov dl,byte ptr[eax+0x8666E3]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
@@ -89,7 +89,7 @@ void __declspec(naked) bIconHook() {
 		cmp dl,0xB4 //storm
 		je _wind
 		//third slot
-		mov dl,byte ptr[eax+008666E4]
+		mov dl,byte ptr[eax+0x8666E4]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
@@ -131,7 +131,7 @@ void __declspec(naked) bIconHook() {
 		cmp dl,0xB4 //storm
 		je _wind
 		//fourth slot
-		mov dl,byte ptr[eax+008666E5]
+		mov dl,byte ptr[eax+0x8666E5]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
@@ -173,7 +173,7 @@ void __declspec(naked) bIconHook() {
 		cmp dl,0xB4 //storm
 		je _wind
 		//fifth slot
-		mov dl,byte ptr[eax+008666E6]
+		mov dl,byte ptr[eax+0x8666E6]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
@@ -215,7 +215,7 @@ void __declspec(naked) bIconHook() {
 		cmp dl,0xB4 //storm
 		je _wind
 		//sixth slot
-		mov dl,byte ptr[eax+008666E7]
+		mov dl,byte ptr[eax+0x8666E7]
 		cmp dl,0x43 //blaze-burn lv1
 		je _fire
 		cmp dl,0x92 //blaze-light lv1
