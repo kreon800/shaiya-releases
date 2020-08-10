@@ -641,7 +641,6 @@ void __declspec(naked) sIconHook() {
     		push eax
     		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
-		push edx
 		push -0x1
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x18]
@@ -664,7 +663,6 @@ void __declspec(naked) sIconHook() {
     		push eax
     		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
-		push edx
 		push -0x1
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x18]
@@ -687,7 +685,6 @@ void __declspec(naked) sIconHook() {
     		push eax
     		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
-		push edx
 		push -0x1
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x18]
@@ -710,7 +707,6 @@ void __declspec(naked) sIconHook() {
     		push eax
     		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
-		push edx
 		push -0x1
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x18]
