@@ -258,27 +258,27 @@ void __declspec(naked) bIconHook() {
 		je _wind
 		pop edx //restore edx
 		//original code
-    mov eax,dword ptr ss:[esp+0x10]
-    push 0x1
+    		mov eax,dword ptr ss:[esp+0x10]
+    		push 0x1
 		jmp bIconRet //return
 
 		_fire: //red
-	  pop edx //restore edx
+	  	pop edx //restore edx
 		mov eax,dword ptr ss:[esp+0x10]
 		push 0x1
-	  push 0x0
-    lea ebp,dword ptr ds:[edi+0x2C]
-    push edx
-    mov edx,dword ptr ss:[esp+0x20]
-    push ebx
-    push esi
-    push eax
-    push edx
-    push ecx
-    mov ecx,ebp
+	  	push 0x0
+    		lea ebp,dword ptr ds:[edi+0x2C]
+    		push edx
+    		mov edx,dword ptr ss:[esp+0x20]
+    		push ebx
+    		push esi
+    		push eax
+    		push edx
+    		push ecx
+    		mov ecx,ebp
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x10]
-    mov esi,dword ptr ss:[esp+0x14]
+    		mov esi,dword ptr ss:[esp+0x14]
 		push 0x20 //icon size
 		push 0x20 //icon size
 		push ecx //position
@@ -289,22 +289,22 @@ void __declspec(naked) bIconHook() {
 		jmp bIconJMP
 
 		_water: //blue
-	  pop edx
+	  	pop edx
 		mov eax,dword ptr ss:[esp+0x10]
 		push 0x1
-	  push 0x0
-    lea ebp,dword ptr ds:[edi+0x2C]
-    push edx
-    mov edx,dword ptr ss:[esp+0x20]
-    push ebx
-    push esi
-    push eax
-    push edx
-    push ecx
-    mov ecx,ebp
+	  	push 0x0
+    		lea ebp,dword ptr ds:[edi+0x2C]
+    		push edx
+    		mov edx,dword ptr ss:[esp+0x20]
+    		push ebx
+    		push esi
+    		push eax
+    		push edx
+    		push ecx
+    		mov ecx,ebp
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x10]
-    mov esi,dword ptr ss:[esp+0x14]
+    		mov esi,dword ptr ss:[esp+0x14]
 		push 0x20 
 		push 0x20 
 		push ecx
@@ -315,22 +315,22 @@ void __declspec(naked) bIconHook() {
 		jmp bIconJMP
 
 		_earth: //green
-	  pop edx
+	  	pop edx
 		mov eax,dword ptr ss:[esp+0x10]
 		push 0x1
-	  push 0x0
-    lea ebp,dword ptr ds:[edi+0x2C]
-    push edx
-    mov edx,dword ptr ss:[esp+0x20]
-    push ebx
-    push esi
-    push eax
-    push edx
-    push ecx
-    mov ecx,ebp
+	  	push 0x0
+    		lea ebp,dword ptr ds:[edi+0x2C]
+    		push edx
+    		mov edx,dword ptr ss:[esp+0x20]
+    		push ebx
+    		push esi
+    		push eax
+    		push edx
+    		push ecx
+    		mov ecx,ebp
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x10]
-    mov esi,dword ptr ss:[esp+0x14]
+    		mov esi,dword ptr ss:[esp+0x14]
 		push 0x20 
 		push 0x20 
 		push ecx
@@ -341,22 +341,22 @@ void __declspec(naked) bIconHook() {
 		jmp bIconJMP
 
 		_wind: //white
-	  pop edx
+	  	pop edx
 		mov eax,dword ptr ss:[esp+0x10]
 		push 0x1
-	  push 0x0
-    lea ebp,dword ptr ds:[edi+0x2C]
-    push edx
-    mov edx,dword ptr ss:[esp+0x20]
-    push ebx
-    push esi
-    push eax
-    push edx
-    push ecx
-    mov ecx,ebp
+	  	push 0x0
+    		lea ebp,dword ptr ds:[edi+0x2C]
+    		push edx
+    		mov edx,dword ptr ss:[esp+0x20]
+    		push ebx
+    		push esi
+    		push eax
+    		push edx
+    		push ecx
+    		mov ecx,ebp
 		call iconRend
 		mov ecx,dword ptr ss:[esp+0x10]
-    mov esi,dword ptr ss:[esp+0x14]
+    		mov esi,dword ptr ss:[esp+0x14]
 		push 0x20 
 		push 0x20 
 		push ecx
@@ -627,19 +627,19 @@ void __declspec(naked) sIconHook() {
 		pop edx //restore edx
 		//original code
 		push 0x0
-    push edx
-    push ebx
-    push edi
+    		push edx
+    		push ebx
+    		push edi
 		jmp sIconRet //return
 
 		_fire: //red
-    pop edx
-    push 0x0
-    push edx
-    push ebx
-    push edi
-    push eax
-    push ecx
+    		pop edx
+    		push 0x0
+    		push edx
+    		push ebx
+    		push edi
+    		push eax
+    		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
 		push edx
 		push -0x1
@@ -656,13 +656,13 @@ void __declspec(naked) sIconHook() {
 		jmp sIconJMP
 
 		_water: //blue
-    pop edx
-    push 0x0
-    push edx
-    push ebx
-    push edi
-    push eax
-    push ecx
+    		pop edx
+    		push 0x0
+    		push edx
+    		push ebx
+    		push edi
+    		push eax
+    		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
 		push edx
 		push -0x1
@@ -679,13 +679,13 @@ void __declspec(naked) sIconHook() {
 		jmp sIconJMP
 
 		_earth: //green
-    pop edx
-    push 0x0
-    push edx
-    push ebx
-    push edi
-    push eax
-    push ecx
+    		pop edx
+    		push 0x0
+    		push edx
+    		push ebx
+    		push edi
+    		push eax
+    		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
 		push edx
 		push -0x1
@@ -702,13 +702,13 @@ void __declspec(naked) sIconHook() {
 		jmp sIconJMP
 
 		_wind: //white
-    pop edx
-    push 0x0
-    push edx
-    push ebx
-    push edi
-    push eax
-    push ecx
+    		pop edx
+    		push 0x0
+    		push edx
+    		push ebx
+    		push edi
+    		push eax
+    		push ecx
 		mov ecx,dword ptr ss:[esp+0x2C]
 		push edx
 		push -0x1
