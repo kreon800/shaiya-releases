@@ -633,7 +633,7 @@ void __declspec(naked) sIconHook() {
 		jmp sIconRet //return
 
 		_fire: //red
-    		pop edx
+    		pop edx //restore edx
     		push 0x0
     		push edx
     		push ebx
