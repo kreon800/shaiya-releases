@@ -1,1 +1,1 @@
-* a simple dll for loading several libraries
+* loads multiple libraries at runtime
