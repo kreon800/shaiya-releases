@@ -1,9 +1,9 @@
 * loads multiple libraries at runtime
 
-** usage **
+**usage**
 
 ```asm
-005312FB   . E9 972C0200    JMP ps_game.00553F97
+005312FB   . E9 972C0200  JMP ps_game.00553F97
 
 ```
 
@@ -17,5 +17,10 @@
 00553FA6   . 5B             POP EBX
 00553FA7   . C9             LEAVE
 00553FA8   . C3             RETN
+
+```
+
+```asm
+00553FAA   . 70 73 5F 67 61 6D 65 2E 64 6C 6C 00  ASCII "ps_game.dll",0
 
 ```
