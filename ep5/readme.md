@@ -1,8 +1,8 @@
 * new item mall solution
 * custom notice function
-* ps_game functions list
-* ps_dbAgent functions list
-* support for more mini maps
+* ps_game functions
+* ps_dbAgent functions
+* extra mini map support
 
 **game.exe**
 ```asm
