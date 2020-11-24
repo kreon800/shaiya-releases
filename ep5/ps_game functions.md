@@ -1,6 +1,7 @@
 **ps_game functions**
 ```asm
 004011E0 - SAgent::GetStatistics
+004059B0 . CGameData::GetItemInfo
 00408C00 - CGameData::GetMobInfo
 004090C0 - CServerApp::InitConsoleCommand
 00409460 - CServerApp::OnConsoleCommand
