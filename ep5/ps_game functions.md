@@ -1149,6 +1149,7 @@
 004D58C0 - IsItem
 004D58F0 - GetItemRType
 004D5920 - GetItemMType
+004D7990 - CGameData::LoadData
 004D7A50 - CGameData::CalcQuestItem
 004D7AE0 - CGameData::LoadKCStatus
 004D7E20 - CGameData::LoadBaseItem
