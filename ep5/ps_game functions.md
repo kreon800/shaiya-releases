@@ -1,7 +1,7 @@
 **ps_game functions**
 ```asm
 004011E0 - SAgent::GetStatistics
-004059B0 . CGameData::GetItemInfo
+004059B0 - CGameData::GetItemInfo
 00408C00 - CGameData::GetMobInfo
 004090C0 - CServerApp::InitConsoleCommand
 00409460 - CServerApp::OnConsoleCommand
@@ -67,6 +67,7 @@
 0041BA60 - CItemQuestData::GetQuestLink
 0041BAC0 - CMap::GetMapID
 0041BAD0 - CMap::IsSafePos
+0041BB30 - CGameData::GetSkillInfo
 0041BB90 - CCell::IsInnerCellView
 0041BBE0 - CZone::CZone
 0041BE40 - CZone::~CZone
